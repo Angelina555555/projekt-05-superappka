@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
  BARVY
@@ -14,20 +20,102 @@ html { box-sizing: border-box; }
 */
 
 body {
-    padding: 0;
-    margin: 0;
-    background-color: #e5e5e5;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
-    margin: 0 auto; /* pruh je na stránce vycentrovaný */
-    background: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+  margin: 0 auto; /* pruh je na stránce vycentrovaný */
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+@media (min-width: 960px) {
+  .prvni {
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+    padding-left: 30px;
+    color: #877d94;
+  }
+
+  .nabidka:hover {
+    color: #51468b;
+    text-transform: uppercase;
+  }
+  .druhy {
+  }
+  .tlacitko {
+    display: inline-block;
+    align-items: flex-start;
+    margin-left: 30px;
+  }
+
+  .stahnout,
+  .informace {
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  .stahnout:hover,
+  .informace:hover {
+    background-color: #48418e;
+  }
+  .popis {
+    color: #ffffff;
+
+    margin-left: 30px;
+  }
+
+  .druhy {
+    background-image: url(images/pozadi.jpg);
+    height: 500px;
+  }
+
+  h1 {
+    color: #ffffff;
+    margin-left: 30px;
+    padding-top: 50px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .telefon {
+    position: relative;
+    left: 205px;
+    bottom: 83px;
+  }
+
+  .treti {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+  }
+  .krouzek {
+    height: 60px;
+  }
+
+  .catuj,
+  .zazij,
+  .cestuj {
+    padding: 20px;
+  }
+
+  .paticka {
+    background-color: #48418e;
+    color: #ffffff;
+    text-align: center;
+    padding: 3px;
+  }
+}
