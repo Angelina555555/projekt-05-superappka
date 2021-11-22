@@ -4,70 +4,67 @@
     <meta charset="utf-8" />
     <title>Mobilní aplikace</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <div class="obal">
       <!-- tvoje HTML sem -->
-
       <div class="kontejner prvni">
-        <p class="nabidka">Super Appka</p>
-        <p class="nabidka">Úžasný design</p>
-        <p class="nabidka">Boží funkce</p>
-        <p class="nabidka">Zdarma ke stažení</p>
+        <ul>
+          <li>Super Appka</li>
+          <li>Úžasný design</li>
+          <li>Boží funkce</li>
+          <li>Zdarma ke stažení</li>
+        </ul>
       </div>
-
       <div class="kontejner druhy">
-        <h1>Super Appka</h1>
-        <p class="popis">
-          Úžasná mobilní aplikace,<br />
-          která Ti změní život.
-        </p>
-        <div class="tlacitko">
-          <button class="stahnout">Stáhnout zdarma</button>
-          <button class="informace">Více informací</button>
+        <div class="maly">
+          <h2>Super Appka</h2>
+          <p class="popis">
+            Úžasná mobilní aplikace,<br />
+            která Ti změní život
+          </p>
+          <div class="tlacitko">
+            <button class="button">Stáhnout zdarma</button>
+            <button class="button">Více informací</button>
+          </div>
+
+          <img class="mobil" src="images/telefon.png" alt="Obrazek telefon" />
         </div>
-        <img class="telefon" src="images/telefon.png" alt="Obrazek telefonu" />
       </div>
       <div class="kontejner treti">
-        <div class="cestuj">
-          <img class="krouzek" src="images/letadlo.svg" alt="Obrazek letadla" />
-          <h2>Cestuj po světě</h2>
+        <div class="first">
+          <img class="obrazek" src="images/letadlo.svg" alt="Obrazek letadla" />
+          <h3>Cestuj po světě</h3>
           <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            eget interdum libero. In fringilla luctus metus nec lacinia.
-            Integer.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            est nibh, luctus nec hendrerit eget, fermentum nec dui. Fusce.
           </p>
         </div>
-        <div class="catuj">
-          <img class="krouzek" src="images/bubliny.svg" alt="Obrazek bublin" />
-          <h2>Čatuj s přáteli</h2>
+        <div class="second">
+          <img class="obrazek" src="images/bubliny.svg" alt="Obrazek bublin" />
+          <h3>Čatuj s přáteli</h3>
           <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            eget interdum libero. In fringilla luctus metus nec lacinia.
-            Integer.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            est nibh, luctus nec hendrerit eget, fermentum nec dui. Fusce.
           </p>
         </div>
-        <div class="zazij">
-          <img class="krouzek" src="images/mapa.svg" alt="Obrazek mapy" />
-          <h2>Zažij dobrodružství</h2>
+        <div class="third">
+          <img class="obrazek" src="images/mapa.svg" alt="Obrazek mapy" />
+          <h3>Zažij dobrodružství</h3>
           <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            eget interdum libero. In fringilla luctus metus nec lacinia.
-            Integer.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            est nibh, luctus nec hendrerit eget, fermentum nec dui. Fusce.
           </p>
         </div>
       </div>
-
-      <footer class="paticka">
-        <p>©2016, Web od A do Z</p>
-      </footer>
     </div>
-    <!-- konec .obal -->
   </body>
+  <footer class="paticka">&#169;2016, Web od A do Z</footer>
 </html>

@@ -23,7 +23,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #e5e5e5;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -38,84 +38,109 @@ body {
 
 /* ----- zde začni psát vlastní CSS ----- */
 
-@media (min-width: 960px) {
-  .prvni {
-    display: flex;
-    justify-content: flex-start;
-    gap: 80px;
-    padding-left: 30px;
-    color: #877d94;
+@media (min-width: 320px) {
+  ul {
+    list-style-type: none;
+    margin: 0;
   }
 
-  .nabidka:hover {
-    color: #51468b;
-    text-transform: uppercase;
+  li {
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
+    padding: 10px;
+    color: #887e95;
+    font-size: 17px;
   }
-  .druhy {
+
+  li:hover {
+    color: #25133d;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0 0 50px;
+    padding-top: 50px;
+  }
+  .maly {
+    height: 500px;
+    background-image: url(images/pozadi.jpg);
+    background-repeat: no-repeat;
   }
   .tlacitko {
+    position: relative;
     display: inline-block;
-    align-items: flex-start;
-    margin-left: 30px;
+    top: -300px;
+  }
+  .button {
+    font-size: 23px;
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    border: white solid 1px;
+    color: white;
+    background-color: transparent;
+    margin-left: 40px;
   }
 
-  .stahnout,
-  .informace {
-    margin-left: 20px;
-    border-radius: 10px;
-    padding: 20px;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-  }
-  .stahnout:hover,
-  .informace:hover {
+  .button:hover {
     background-color: #48418e;
   }
-  .popis {
-    color: #ffffff;
 
-    margin-left: 30px;
-  }
-
-  .druhy {
-    background-image: url(images/pozadi.jpg);
-    height: 500px;
-  }
-
-  h1 {
-    color: #ffffff;
-    margin-left: 30px;
-    padding-top: 50px;
-    font-family: "Roboto", sans-serif;
-  }
-
-  .telefon {
+  .mobil {
     position: relative;
-    left: 205px;
-    bottom: 83px;
+    right: -65px;
+    bottom: 230px;
   }
 
+  .obrazek {
+    height: 90px;
+  }
+
+  .obrazek:hover {
+    transform: scale(1.2);
+  }
+  h3 {
+    font-family: "Roboto", sans-serif;
+    color: #48418e;
+  }
   .treti {
-    margin: 30px;
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
     padding: 20px;
   }
-  .krouzek {
-    height: 60px;
+
+  .first,
+  .second,
+  .third {
+    padding: 20px;
   }
 
-  .catuj,
-  .zazij,
-  .cestuj {
-    padding: 20px;
+  .text {
+    font-family: "Roboto", sans-serif;
+    color: #5c5c5c;
   }
 
   .paticka {
-    background-color: #48418e;
-    color: #ffffff;
+    font-family: "Roboto", sans-serif;
     text-align: center;
-    padding: 3px;
+    background-color: #48418e;
+    color: white;
+    padding: 10px;
+  }
+
+  .popis {
+    color: white;
+    margin-left: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 0;
   }
 }
