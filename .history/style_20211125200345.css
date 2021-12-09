@@ -34,7 +34,6 @@ body {
   margin: 0 auto; /* pruh je na stránce vycentrovaný */
   background: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  font-family: "Roboto", sans-serif;
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
@@ -46,6 +45,7 @@ body {
   }
 
   li {
+    font-family: "Roboto", sans-serif;
     display: inline-block;
     padding: 10px;
     color: #887e95;
@@ -59,13 +59,23 @@ body {
   }
 
   h2 {
+    font-family: "Roboto", sans-serif;
     font-size: 80px;
     font-weight: 700;
     color: white;
     margin: 10px 0 0 50px;
     padding-top: 50px;
+    animation: pulz 3s infinite;
   }
 
+  @keyframes pulz {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.001);
+    }
+  }
   .maly {
     height: 500px;
     background-image: url(images/pozadi.jpg);
@@ -78,7 +88,7 @@ body {
   }
   .button {
     font-size: 23px;
-
+    font-family: "Roboto", sans-serif;
     padding: 20px;
     border-radius: 10px;
     border: white solid 1px;
@@ -99,10 +109,10 @@ body {
 
   .obrazek {
     height: 90px;
-    animation: pulse 3s infinite;
+    animation: pulz 3s infinite;
   }
 
-  @keyframes pulse {
+  @keyframes pulz {
     from {
       transform: scale(1);
     }
@@ -112,6 +122,7 @@ body {
   }
 
   h3 {
+    font-family: "Roboto", sans-serif;
     color: #48418e;
   }
   .treti {
@@ -129,10 +140,12 @@ body {
   }
 
   .text {
+    font-family: "Roboto", sans-serif;
     color: #5c5c5c;
   }
 
   .paticka {
+    font-family: "Roboto", sans-serif;
     text-align: center;
     background-color: #48418e;
     color: white;
@@ -142,6 +155,7 @@ body {
   .popis {
     color: white;
     margin-left: 30px;
+    font-family: "Roboto", sans-serif;
     font-size: 30px;
     padding: 20px;
     margin-top: 0;
